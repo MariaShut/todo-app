@@ -12,7 +12,24 @@
   <script defer src="./todo-app.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      createTodoApp(document.getElementById('todo-app'), 'Мои дела');
+      let defaultArr = [
+        {
+          id: 1,
+          name: 'спорт',
+          done: true,
+        },
+        {
+          id: 2,
+          name: 'медитация',
+          done: true,
+        },
+        {
+          id: 3 ,
+          name: 'чтение',
+          done: false,
+        }
+      ];
+      createTodoApp(document.getElementById('todo-app'), 'Мои дела', 'my', defaultArr);
     });
   </script>
 </head>
